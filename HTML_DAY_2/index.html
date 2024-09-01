@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="download.jpeg" sizes="16*16">
+
+    <style>
+        .f1{
+            align-items: center;
+            text-align: center;
+            margin-top: 10px;
+            /* border: 1px solid #fff; */
+            background-color: #fff;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <!-- INLINE FORMS -->
+    <!-- Creating form using form tag -->
+    <fieldset><center>Login Page</center></fieldset>
+    <br>
+    <hr>
+    <fieldset class="f1">
+        <legend>Registration Form </legend>
+    <h2>Sign In</h2>
+    <form action="">
+        <label for="">Username :- </label>
+        <input type="text">
+    <form action="">
+        <label for="">Password :- </label>
+        <input type="text">
+    <button>Submit</button>
+    <button>Reset</button>
+    </fieldset>
+    <br>
+    <hr>
+    <!-- HORIZONTAL FORM -->
+    <!-- Creating form using table tag -->
+    <fieldset>
+        <legend>Registration Form</legend>
+    <table>
+        <form action="">
+            <tr>
+                <td>
+                    <label for="">Username </label>
+                </td>
+                <td>
+                    <input type="text" placeholder="Enter your username" autofocus title="Ex1:User12345" required pattern="[A-Z]{1}[a-z]*[0-9]{5}">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Password </label>
+                </td>
+                <td>
+                    <input type="text" placeholder="Enter your password" autofocus title="Ex1:User12345" required pattern="[A-Z]{1}[a-z]*[0-9]{5}">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button>Submit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button>Reset</button>
+                </td>
+            </tr>
+        </form> 
+    </table>
+    </fieldset>
+    <br>
+    <hr>
+    <br>
+    <!-- VERTICAL FORM -->
+    <!-- Creating Vertical Form -->
+     <!-- RADIO BUTTON -->
+    <fieldset>
+        <legend>Radio_Button</legend>
+        <center>
+            <!-- using get method -->
+            <form action="get" method="get">
+                <label for="">Gender :</label>
+                <input type="radio" name="Gender" value="Male">
+                <label for="">Male</label>
+                <input type="radio" name="Gender" value="Female">
+                <label for="">Female</label>
+                <button>Submit</button>
+            </form>
+            <!-- using post method -->
+            <form action="post" method="post">
+                <label for="">Cast :</label>
+                <input type="radio" name="Cast" value="General">
+                <label for="">General</label>
+                <input type="radio" name="Cast" value="Others">
+                <label for="">Others</label>
+                <button>Submit</button>
+            </form>
+        </center>
+    </fieldset>
+    <br>
+        <hr>
+        <br>
+    <!-- Creating Check Box -->
+    <fieldset>
+        <legend>Check_Box</legend>
+        <form action="">  
+        <center>
+        <label for="">Branches</label>
+        <input type="checkbox" name="Branches" value="CS/IT">
+        <label for="">CS/IT</label>
+        <input type="checkbox" name="Branches" value="ME">
+        <label for="">ME</label>
+        <input type="checkbox" name="Branches" value="EE">
+        <label for="">EE</label>
+        <input type="checkbox" name="Branches" value="EC">
+        <label for="">EC</label>
+        <input type="checkbox" name="Branches" value="CE">
+        <label for="">CE</label>
+        <button>Submit</button>
+        </center>
+        </form>
+    </fieldset>
+    <br>
+        <hr>
+        <br>
+        <!-- Select One Option Choice-->
+    <fieldset>
+        <legend>Select One</legend>
+        <form action="">
+        <center>
+            <tr>
+            Courses
+            <select name="" id="">
+                <td><option value="">Select Courses</option></td>
+                <td><option value="">Diploma in Engineering</option></td>
+                <td><option value="">Bechlor Of Technology</option></td>
+                <td><option value="">Bechlor of ComputerApplication</option></td>
+            </select>
+            </tr>
+            <tr>
+            Branches
+            <select name="" id="">
+                <td><option value="">Select Branches</option></td>
+                <td><option value="">ComputerScience</option></td>
+                <td><option value="">ElectricalEngineering</option></td>
+                <td><option value="">ElectronicsEngineering</option></td>
+                <td><option value="">CivilEngineering</option></td>
+                <td><option value="">MechanicalEngineering</option></td>
+            </select>
+            </tr>
+            <tr>
+                <td><button>Sumbit</button></td>
+            </tr>
+            
+        </center>
+        </form>
+    </fieldset>
+    <br>
+        <hr>
+        <br>
+        <!-- CHOOSE FILE BOX -->
+        <!-- Creating choose file box -->
+    <fieldset>
+        <legend>File</legend>
+        <form action="post" method="post">
+            <!-- choose file -->
+            <input type="file">
+            <button>SUBMIT</button>
+            <br>
+            <!-- choose date -->
+            <input type="date">
+            <button>SUBMIT</button>
+            <br>
+            <!-- choose image -->
+            <input type="image" src="download.jpeg">
+            <button>SUBMIT</button>
+            <br>
+            <!-- choose time -->
+            <input type="time" src="download.jpeg">
+            <button>SUBMIT</button>
+            <br>
+            <!-- choose range -->
+            <input type="range">
+            <button>SUBMIT</button>
+            <br>
+            <!-- choose date and time local -->
+            <input type="datetime-local">
+            <button>SUBMIT</button>
+            <br>
+            <!-- choose color -->
+            <input type="color">
+            <button>SUBMIT</button>
+            <br>
+        </form>
+    </fieldset>
+    <br>
+        <hr>
+        <br>
+        <!-- Semantic Tags -->
+        <!-- header tag -->
+    <header>
+        Header Section
+    </header>
+    <br>
+    <hr>
+    <br>
+        <!-- main tag -->
+    <main>
+        Main Body Section
+    </main>
+    <br>
+    <hr>
+    <br>
+        <!-- footer tag -->
+    <footer>
+        Footer Section
+    </footer>
+    <br>
+    <hr>
+    <!-- video file -->
+    <video width="320" height="240" controls>
+        <source src="(Film02...) Love Song!.mp4" type="video/mp4"></video>
+    <br>
+    <hr>
+    <!-- audio file -->
+    <audio controls>
+        <source src="Allah De Bandeya(PagalWorld.com.sb).mp3" type="audio/mp3">
+    </audio>
+    <br>
+    <hr>
+    <!-- SVG tag -->
+    <!-- q tag  used for quotation-->
+    <p>Hi Mahir<q>future to live</q></p>
+    <hr>
+    <!-- abbr tag -->
+    <p>Hey <abbr title="">Mahir</abbr></p>
+    <hr>
+    <!-- address tag -->
+    <p><address>
+        Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+        Visit us at:<br>
+        Example.com<br>
+        Box 564, Disneyland<br>
+        USA
+        </address>
+    </p>
+    <hr>
+    <!-- cite tag -->
+    <p><cite>
+        The Scream
+        </cite> 
+        by Edward Munch. Painted in 1893.
+    </p>
+    <!-- bdo tag  used to reverse-->
+    <bdo dir="rtl">
+        This text will go right-to-left.
+    </bdo>
+    <br>
+</body>
+</html>
